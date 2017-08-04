@@ -1,0 +1,129 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ProspectsService",
+		"_postman_id": "c4bf62de-6ca7-2142-7cb9-8512df445e2e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET prospects",
+			"request": {
+				"url": "http://localhost:3000/api/prospects",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET prospect",
+			"request": {
+				"url": "http://localhost:3000/api/prospects/5982e8431002db4682e11415",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST prospect",
+			"request": {
+				"url": "http://localhost:3000/api/prospects",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "someone@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ip_address",
+							"value": "192.168.1.2",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "postman",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT prospect",
+			"request": {
+				"url": "http://localhost:3000/api/prospects/5983323f1002db4f6a3c41d5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "someone@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "ip_address",
+							"value": "10.10.10.10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "blahh",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE prospect",
+			"request": {
+				"url": "http://localhost:3000/api/prospects/598338871002db4fce7f1283",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
